@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.botframework.com/schemas/skills/v2/skill-manifest.json",
+  "name": "MyAzureBotSkill",
+  "description": "Skill hosted on Azure Bot Services",
+  "endpoints": [
+    {
+      "name": "default",
+      "protocol": "BotFrameworkV3",
+      "url": "https://webchatbot-app-ddevghe2hvetc0dr.southeastasia-01.azurewebsites.net/api/messages",
+      "msAppId": "e56cbffd-8b8e-4744-8411-53d689e8e1b0"
+    }
+  ],
+  "activities": {
+    "GetReport": {
+      "type": "message",
+      "name": "Get Report",
+      "description": "Handles requests to retrieve reports."
+    }
+  }
+}
